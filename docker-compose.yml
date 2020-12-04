@@ -1,0 +1,10 @@
+version: "3"
+services:
+  v2ray:
+    image: v2ray/official
+    container_name: v2ray
+    restart: always
+    ports:
+      - 10086:10086
+    volumes:
+      - "./config:/etc/v2ray"
