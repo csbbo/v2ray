@@ -69,6 +69,7 @@ rules:
   - DOMAIN-SUFFIX,cn,DIRECT
 
   - DOMAIN-KEYWORD,google,Proxy
+  - DOMAIN-KEYWORD,github,Proxy
 
   - DOMAIN-SUFFIX,mmstat.com,REJECT
   - DOMAIN-KEYWORD,openx,REJECT
