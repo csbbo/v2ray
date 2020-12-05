@@ -66,4 +66,12 @@ proxy-groups:
     proxies:
       - v2ray
 rules:
-  - 'MATCH,DIRECT'
+  - DOMAIN-SUFFIX,cn,DIRECT
+
+  - DOMAIN-KEYWORD,google,Proxy
+
+  - DOMAIN-SUFFIX,mmstat.com,REJECT
+  - DOMAIN-KEYWORD,openx,REJECT
+
+  - GEOIP,CN,DIRECT
+  - MATCH,Proxy
